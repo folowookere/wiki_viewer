@@ -4,24 +4,32 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script src="scripts/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
 <title>Search Wikipedia</title>
+
 </head>
 
 <body class="bg-light">
 
     <div class="container" style="width:400px; padding-top:35px;">
-        <div class="row ">
+        <div class="row">
+            <h1 class="mx-auto">Search Wikipedia</h1>
             <form class="form-inline">
-     <input class="form-control form-control-lg" type="text" placeholder="Search" id="search_form" >
-     <button type="button" class="btn btn-lg btn-dark ml-3">Submit</button></form></div>
+     <input class="form-control form-control-lg" type="text" placeholder="Search" id="searchform" >
+     <button type="button" id="searchbutton" class="btn btn-lg btn-dark ml-3">Submit</button></form></div>
      <div class="row" style="padding-top:35px;">
-     <p class="mx-auto"><a class="btn btn-dark" href="https://en.wikipedia.org/wiki/Special:Random"><i class="fas fa-random fa-3x" alt="View a random article"></i></a></p>
-     
+     <p class="mx-auto"><a class="btn btn-dark" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="fas fa-random fa-3x" alt="View a random article"></i></a></p>
+    
 </div>
     </div>
-        </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="container">
+    <ul id="searchresults" class="list-group list-group-flush">
+        
+        
+    </ul>
+</div>
 </body>
 </html>
